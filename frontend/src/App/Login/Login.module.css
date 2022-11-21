@@ -1,14 +1,12 @@
 .inputContainer {
-  height: 100vh;
-  padding: 30px 50px;
-  background-color: #2d3436;
+  margin: 30px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .Input {
-  width: 30%;
+  width: 50%;
   margin-bottom: 10px;
   font-size: 18px;
   padding: 10px;
@@ -23,4 +21,46 @@
   font-size: 18px;
   width: 30%;
   margin-top: 30px;
+}
+
+.Submit:hover {
+  background-color: aqua;
+  color: black;
+  width: 40%;
+  height: 50%;
+}
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+.mainInput {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  padding: 10%;
+  color: white;
+  text-align: center;
 }

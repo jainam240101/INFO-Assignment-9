@@ -1,6 +1,6 @@
-import { userModel } from "../schemas/User";
-import { encryptPassword, verifyHash } from "../utils/bcrypt";
-import { sendErrorResponse, sendSuccessResponse } from "../utils/response";
+import { userModel } from "../models/User";
+import { encryptPassword, verifyHash } from "../services/bcrypt";
+import { sendErrorResponse, sendSuccessResponse } from "../services/response";
 import { passwordStrength } from "check-password-strength";
 
 export const createUserHandler = async (req, res) => {
@@ -101,6 +101,6 @@ export const loginHandler = async (req, res) => {
 
     sendSuccessResponse(res, { message: "Login Successfully" });
   } catch (error) {
-   sendErrorResponse(res, error.message);
+    sendErrorResponse(res, error.message);
   }
 };

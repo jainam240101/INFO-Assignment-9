@@ -1,29 +1,35 @@
-.mainContainer {
-  height: 100vh;
-  color: white;
-  background-color: #2d3436;
+.main {
+  height: 200%;
+  width: 100%;
 }
-.inputContainer {
-  margin: 30px 50px;
+.mainInput {
+  height: 100%;
+  width: 100%;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.Input {
-  width: 30%;
-  margin-bottom: 10px;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 10px;
+.img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.Submit {
-  background-color: teal;
-  border: none;
-  color: white;
-  padding: 10px 0;
-  font-size: 18px;
-  width: 30%;
-  margin-top: 30px;
+.img-wrapper div {
+  flex: 0 1 33%;
+}
+
+.img-wrapper div img {
+  height: 2px;
+  width: 2px;
+}
+
+@media (max-width: 1000px) {
+  .img-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }

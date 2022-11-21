@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import classes from "./Navbar.module.css";
+import classes from "./Navbar.module.css"
+
 
 const Navbar = () => {
   return (
     <div className={classes.Container}>
+
       <Link to="/home">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/contact">Contact</Link>
